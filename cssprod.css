@@ -56,7 +56,7 @@
     height: 100%;
     filter: blur(8px);
     transition: filter 0.3s ease;
-    background-image: url('/img/Milio_OriginalCentered.jpg');
+    background-image: url('img/Milio_OriginalCentered.jpg');
 }
 
 .column img {
@@ -94,7 +94,7 @@
     height: 100%;
     filter: blur(8px);
     transition: filter 0.3s ease;
-    background-image: url('/img/1305314.jpg');
+    background-image: url('img/1305314.jpg');
 }
 
 .column2 img {
@@ -127,7 +127,7 @@
     height: 100%;
     filter: blur(8px);
     transition: filter 0.3s ease;
-    background-image: url('/img/rain-shepherd-milio-splash-art-v0-rz48bizllz5d1.webp');
+    background-image: url('img/rain-shepherd-milio-splash-art-v0-rz48bizllz5d1.webp');
 }
 
 .column3 img {
