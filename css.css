@@ -1,0 +1,139 @@
+/* GENERAL */
+
+.especial {
+    font-size: small;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    background-color: #BCCCDC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Golos Text", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #9AA6B2;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* MAIN */
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    background-color: #BCCCDC;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #BCCCDC;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.formulario button {
+    background-color: #D9EAFD;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #9AA6B2;
+    transition: background-color 0.3s;
+}
+
+
+/* NAV */
+
+.navegador {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #F8FAFC;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #D9EAFD;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #9AA6B2;
+    color: white;
+}
+
+.contenido {
+    flex: 1;
+    background-color: #D9EAFD;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    text-align: right;
+    background-color: #9AA6B2;
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+}
