@@ -14,16 +14,20 @@
 <body>
     <div class="container">
         <!-- Cabecera -->
-        <div class="tooltip">
-            <span class="tooltiptext">Entra y descubre</span>
+
         <header class="header">
             <div class="logo"><img src="img/Milio_RainShepherd_29.webp" alt="Milio foto"></div>
+            <form class="busquedad">
+                <input type="text" class="buscar" placeholder="Buscar...">
+                <button type="submit" class="boton">🔍
+                </button>
+            </form>
         </header>
-        </div>
+
 
 
         <!-- Contenido principal -->
-        <main class="main-content">
+        <main class="main">
 
             <!-- Sección izquierda: Inputs -->
             <div class="formulario">
@@ -31,6 +35,7 @@
                 <input type="password" required>
                 <input type="number">
                 <input type="date">
+
                 <button class="button" type="submit">Dar de alta</button>
                 <label class="especial">Recordar contraseña<input type="checkbox"></label>
             </div>
@@ -38,7 +43,10 @@
             <!-- Sección derecha: Navegación y contenido -->
             <div class="navegador">
                 <nav class="navbar">
-                    <a href="index.html">Inicio</a>
+                    <div class="tooltip">
+                        <span class="tooltiptext">Entra y descubre</span>
+                        <a href="index.html">Inicio</a>
+                    </div>
                     <a href="productos.html">Productos</a>
                     <a href="#">Sobre Nosotros</a>
                     <a href="#">Ayuda</a>
@@ -61,5 +69,7 @@
         </footer>
     </div>
 </body>
+
+</html>
 
 </html>
