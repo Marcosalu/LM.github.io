@@ -7,6 +7,23 @@
     font-family: "Golos Text", sans-serif;
 }
 
+.special-offer {
+    position: absolute;
+    top: 1250px;
+    left: 1000px;
+    width: 80px;
+    height: 80px;
+    background: url('img/star.png') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    animation: blink 1s infinite;
+}
+
 
 /* HEADER */
 
@@ -53,7 +70,7 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 200%;
     filter: blur(8px);
     transition: filter 0.3s ease;
     background-image: url('img/Milio_OriginalCentered.jpg');
@@ -61,13 +78,15 @@
 
 .column img {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 18%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 20vh;
     height: auto;
     border-radius: 8px;
     transition: opacity 0.3s ease;
+    transform: perspective(1000px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .column:hover {
@@ -76,6 +95,8 @@
 
 .column:hover img {
     opacity: 1;
+    transform: rotate(10deg) scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .main-content {
@@ -99,13 +120,15 @@
 
 .column2 img {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 18%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 20vh;
     height: auto;
     border-radius: 8px;
     transition: opacity 0.3s ease;
+    transform: perspective(1000px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .column2:hover {
@@ -114,6 +137,8 @@
 
 .column2:hover img {
     opacity: 1;
+    transform: rotate(10deg) scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -132,13 +157,15 @@
 
 .column3 img {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 18%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 20vh;
     height: auto;
     border-radius: 8px;
     transition: opacity 0.3s ease;
+    transform: perspective(1000px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .column3:hover {
@@ -147,4 +174,31 @@
 
 .column3:hover img {
     opacity: 1;
+    transform: rotate(10deg) scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* PARPADEO */
+
+@keyframes parpadeo {
+    100% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    0% {
+        opacity: 0;
+    }
+}
+
+.parpadeo {
+    animation: parpadeo 2.5s infinite;
 }
