@@ -8,7 +8,6 @@
     align-items: flex-start;
     gap: 10px;
     padding: 20px;
-    background-color: #BCCCDC;
 }
 
 * {
@@ -29,8 +28,8 @@
 
 .header {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
     background-color: #9AA6B2;
     padding: 10px 20px;
 }
@@ -38,12 +37,45 @@
 .logo {
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.busquedad {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.buscar {
+    display: flex;
+    width: 150px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    transition: width 0.4s ease;
+    outline: none;
+}
+
+.boton {
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #BCCCDC;
+    color: white;
+    border: 1px solid #007BFF;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #9AA6B2;
 }
 
 
 /* MAIN */
 
-.main-content {
+.main {
     display: flex;
     flex: 1;
 }
@@ -59,6 +91,11 @@
     gap: 10px;
     padding: 20px;
     background-color: #BCCCDC;
+    transition: background-color 0.5s ease;
+}
+
+.formulario:hover {
+    background-color: #E3F2FD;
 }
 
 .formulario input {
@@ -82,7 +119,6 @@
 
 .button:hover {
     background-color: #9AA6B2;
-    transition: background-color 0.3s;
 }
 
 
@@ -138,12 +174,14 @@
     position: relative;
 }
 
-/* TOOTLTIP */
+
+/*tooltip*/
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FAFC;
+    width: 200px;
 }
 
 .tooltip .tooltiptext {
@@ -155,8 +193,17 @@
     border-radius: 6px;
     position: absolute;
     z-index: 1;
+    padding: 10px;
+    border: solid black;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    background-color: #D9EAFD;
+    opacity: 1;
+}
 .tooltip:hover .tooltiptext {
     visibility: visible;
     background-color: #D9EAFD;
